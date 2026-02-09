@@ -1,15 +1,20 @@
 {
   "name": "workbench",
   "private": true,
-  "packageManager": "pnpm@8",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "build": "turbo build",
     "test": "turbo test",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "dev:all": "pnpm -r --filter '@nt-kit/*' run dev"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.2.2",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.3",
     "eslint": "^10.0.0",
     "jsdom": "^28.0.0",
@@ -19,6 +24,7 @@
     "turbo": "^2.8.3",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.18"
   }
 }
