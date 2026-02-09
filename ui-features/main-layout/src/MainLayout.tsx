@@ -1,6 +1,6 @@
 import React from "react";
 
-interface MainLayoutProps {
+export interface MainLayoutProps {
   children?: React.ReactNode;
 }
 
